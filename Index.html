@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎧 Sentiment & Song Recommendation Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 15px 0;
+    }
+    code {
+      background: #eee;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎧 Sentiment & Song Recommendation Dashboard</h1>
+
+  <div class="section">
+    <h2>📄 Dataset Info</h2>
+    <p>Dataset contains <strong>1000 entries</strong> with user moods, song recommendations, and musical attributes.</p>
+  </div>
+
+  <div class="section">
+    <h2>🧾 Description</h2>
+    <ul>
+      <li><strong>Average Tempo (BPM):</strong> 97.76</li>
+      <li><strong>Max Tempo:</strong> 160</li>
+      <li><strong>Min Tempo:</strong> 50</li>
+      <li><strong>No Missing Values</strong> ✅</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🔍 Sample Data</h2>
+    <p>Includes user sentiment like <code>Happy</code>, <code>Sad</code>, etc. and songs such as <em>Someone Like You</em> by Adele or <em>Happy</em> by Pharrell Williams.</p>
+  </div>
+
+  <div class="section">
+    <h2>📊 Sentiment Analysis</h2>
+    <ul>
+      <li>🎯 <strong>Motivated:</strong> 262 songs</li>
+      <li>😄 <strong>Happy:</strong> 256 songs</li>
+      <li>😢 <strong>Sad:</strong> 243 songs</li>
+      <li>😌 <strong>Relaxed:</strong> 239 songs</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎵 Top Songs</h2>
+    <ul>
+      <li><strong>Happy</strong> - 143 times</li>
+      <li><strong>Clair de Lune</strong> - 134 times</li>
+      <li><strong>Stronger</strong> - 132 times</li>
+      <li><strong>Eye of the Tiger</strong> - 130 times</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎼 Genre Distribution</h2>
+    <ul>
+      <li>🎤 Pop: 263</li>
+      <li>🎸 Rock: 253</li>
+      <li>🎻 Classical: 134</li>
+      <li>🎧 Hip-Hop: 132</li>
+      <li>🎷 Funk: 113</li>
+      <li>🌌 Ambient: 105</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🧠 Mood Mapping</h2>
+    <p>Available moods: <code>Melancholic</code>, <code>Joyful</code>, <code>Soothing</code>, <code>Energetic</code>, <code>Emotional</code>, <code>Powerful</code>, <code>Calm</code></p>
+    <p><strong>Entered Mood:</strong> 🧘 Calm</p>
+  </div>
+
+  <div class="section">
+    <h2>🗂️ Clustering Results</h2>
+    <p>✅ Clustering performed on mood, energy, and tempo features.</p>
+  </div>
+
+  <div class="section">
+    <h2>📉 PCA Visualization</h2>
+    <img src="pca_plot.png" alt="PCA Plot" />
+  </div>
+
+  <div class="section">
+    <h2>📊 Radar Chart</h2>
+    <img src="radar_chart.png" alt="Radar Chart of Music Attributes" />
+  </div>
+
+  <div class="section">
+    <h2>📝 Conclusion</h2>
+    <p>🎯 The dataset reflects a rich mapping of user sentiment to music preferences. With genres ranging from classical to pop and moods from calm to powerful, the system offers tailored recommendations driven by emotional input.</p>
+  </div>
+
+</body>
+</html>
